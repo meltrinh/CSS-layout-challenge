@@ -1,0 +1,181 @@
+/* Applies border box sizing to the root element */
+:root {
+  box-sizing: border-box;
+}
+
+/* Tells all other elements and pseudo-element to inherit their box sizing */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  padding: 30px 20vw;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 30px;
+  height: 400px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #828686;
+}
+.container {
+  flex-grow: 1;
+  width: 100%;
+  background-color: white;
+}
+
+section .circle {
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(115, 112, 112);
+}
+
+section .circle-red {
+  background-color: #e74c3c;
+}
+section .circle-yellow {
+  background-color: #f1c40f;
+}
+section .circle-green {
+  background-color: #2ecc71;
+}
+section .header-bar {
+  display: flex;
+  align-items: center;
+  background-color: #828686;
+  height: 40px;
+}
+section h1 {
+  font-size: 1em;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Utilities */
+
+.box-square {
+  width: 100px;
+  height: 100px;
+}
+.box-square-xl {
+  width: 200px;
+  height: 200px;
+}
+.bg-black {
+  background-color: black;
+}
+.bg-dark {
+  background-color: #4a4a4a;
+}
+.bg-grey {
+  background-color: #bdc3c7;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* YOUR CODE STARTS HERE */
+/* Challenge 1 */
+
+#challenge1 .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#challenge1 .right-side {
+  display: flex;
+}
+
+/* Challenge 2 */
+#challenge2 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#challenge2 .box-square:nth-child(2) {
+  align-self: center;
+}
+
+#challenge2 .box-square:nth-child(3) {
+  align-self: flex-end;
+}
+
+/* Challenge 3 */
+#challenge3 .container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#challenge3 .bg-dark {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+#challenge3 .bg-black {
+  position: relative;
+  top: 50px;
+}
+
+/* Challenge 4 */
+#challenge4 .container {
+  display: flex;
+}
+
+#challenge4 .bg-black {
+  position: relative;
+}
+
+#challenge4 .bg-dark {
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  left: -50px;
+}
+
+/* Challenge 5 */
+#challenge5 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#challenge5 .box-square:nth-child(1) {
+  align-self: flex-end;
+}
+
+#challenge5 .box-square:nth-child(2) {
+  align-self: center;
+}
+
+/* Challenge 6 */
+#challenge6 .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#challenge6 .box-square:nth-child(1) {
+  /* flex-basis: 60%; */
+  background-color:#4c4545;
+  position: absolute;
+  width: 280px;
+  height: 140px;
+}
+
+#challenge6 .box-square:nth-child(2) {
+  position: relative;
+  left: -80px;
+}
+
+#challenge6 .box-square:nth-child(3) {
+  
+}
