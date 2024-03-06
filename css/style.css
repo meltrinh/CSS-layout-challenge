@@ -167,15 +167,168 @@ section h1 {
   /* flex-basis: 60%; */
   background-color:#4c4545;
   position: absolute;
-  width: 280px;
-  height: 140px;
+  width: 400px;
+  height: 200px;
 }
 
 #challenge6 .box-square:nth-child(2) {
   position: relative;
-  left: -80px;
+  left: -200px;
 }
 
 #challenge6 .box-square:nth-child(3) {
-  
+  position: relative;
+  right: 0px;
+  top: -100px;
+}
+
+/* Challenge 7 */
+#challenge7 .bg-black {
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+
+/* Challenge 8 */
+#challenge8 .container {
+  display: flex;
+}
+
+#challenge8 .bg-black {
+  position: relative;
+  left: -100px;
+}
+
+/* Challenge 9 */
+#challenge9 .box1 {
+  height: 300px;
+  width: 180px;
+  background-color: #4a4a4a;
+  position: relative;
+}
+
+#challenge9 .box2 {
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+#challenge9 .box3 {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+/* Challenge 10 */
+#challenge10 .container {
+  padding: 40px 100px;
+}
+
+#challenge10 .box1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  align-items: center;
+  position: relative;
+}
+
+#challenge10 .box1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Challenge 11 */
+#challenge11 .box1 {
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+
+#challenge11 .box2 {
+  position: absolute;
+  height: 200px;
+  width: 140px;
+  bottom: 0;
+  right: 0;
+}
+
+#challenge11 .box3 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Challenge 12 */
+#challenge12 .box1 {
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+
+#challenge12 .box2 {
+  position: absolute;
+  bottom: 0;
+  right: -70px;
+  height: 200px;
+  width: 140px;
+}
+
+#challenge12 .box3 {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
+/* Challenge 13 */
+#challenge13 .box1 {
+  position: relative;
+}
+
+#challenge13 .followers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* Challenge14  */
+#challenge14 .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#challenge14 .box1 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#challenge14 .box2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* Challenge15 */
+#challenge15 {
+  height: 450px;
+}
+
+#challenge15 .box-container {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+  width: 420px;
+}
+#challenge15 .col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#challenge15 .col2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
 }
